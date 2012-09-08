@@ -2729,7 +2729,104 @@ html, body {
   height: 10px;
   cursor: se-resize;
 }
-/* line 99, ../../sass/plugins/cms.placeholders.scss */
+/* line 100, ../../sass/plugins/cms.placeholders.scss */
+#cms_toolbar-modal .cms_toolbar-modal-breadcrumb {
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  -khtml-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  background: #fff;
+  list-style: none;
+  overflow: hidden;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+/* line 108, ../../sass/plugins/cms.placeholders.scss */
+#cms_toolbar-modal .cms_toolbar-modal-breadcrumb li {
+  float: left;
+}
+/* line 110, ../../sass/plugins/cms.placeholders.scss */
+#cms_toolbar-modal .cms_toolbar-modal-breadcrumb li a {
+  color: #222;
+  text-decoration: none;
+  padding: 3px 0 3px 45px;
+  background: #fefefe;
+  position: relative;
+  display: block;
+  float: left;
+}
+/* line 118, ../../sass/plugins/cms.placeholders.scss */
+#cms_toolbar-modal .cms_toolbar-modal-breadcrumb li a:after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+/* line 132, ../../sass/plugins/cms.placeholders.scss */
+#cms_toolbar-modal .cms_toolbar-modal-breadcrumb li a:before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #ebebeb;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+/* line 147, ../../sass/plugins/cms.placeholders.scss */
+#cms_toolbar-modal .cms_toolbar-modal-breadcrumb li a:hover {
+  background: #eee;
+}
+/* line 149, ../../sass/plugins/cms.placeholders.scss */
+#cms_toolbar-modal .cms_toolbar-modal-breadcrumb li a:hover:after {
+  border-left-color: #eee !important;
+}
+/* line 155, ../../sass/plugins/cms.placeholders.scss */
+#cms_toolbar-modal .cms_toolbar-modal-breadcrumb li:first-child a {
+  -moz-border-radius: 0 0 0 5px;
+  -webkit-border-radius: 0 0 0 5px;
+  -o-border-radius: 0 0 0 5px;
+  -ms-border-radius: 0 0 0 5px;
+  -khtml-border-radius: 0 0 0 5px;
+  border-radius: 0 0 0 5px;
+  padding-left: 20px;
+}
+/* line 162, ../../sass/plugins/cms.placeholders.scss */
+#cms_toolbar-modal .cms_toolbar-modal-breadcrumb li:last-child a {
+  background: #f5f5f5;
+  border-right: 1px solid #f5f5f5;
+  color: #222;
+  font-weight: bold;
+  pointer-events: none;
+  cursor: default;
+}
+/* line 169, ../../sass/plugins/cms.placeholders.scss */
+#cms_toolbar-modal .cms_toolbar-modal-breadcrumb li:last-child a:after {
+  border: 0;
+}
+/* line 172, ../../sass/plugins/cms.placeholders.scss */
+#cms_toolbar-modal .cms_toolbar-modal-breadcrumb li:last-child a:before {
+  border-left: 30px solid #f5f5f5;
+}
+/* line 181, ../../sass/plugins/cms.placeholders.scss */
 #cms_toolbar-modal .shim {
   position: absolute;
   left: 0;
@@ -2740,7 +2837,7 @@ html, body {
   display: none;
 }
 
-/* line 103, ../../sass/plugins/cms.placeholders.scss */
+/* line 186, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-subnav {
   display: none;
   list-style: none;
@@ -2761,7 +2858,7 @@ html, body {
   overflow: auto;
 }
 
-/* line 106, ../../sass/plugins/cms.placeholders.scss */
+/* line 189, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-subnav ul {
   list-style: none;
   padding: 0;
@@ -2769,20 +2866,20 @@ html, body {
   width: 100%;
 }
 
-/* line 107, ../../sass/plugins/cms.placeholders.scss */
+/* line 190, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-subnav ul li {
   float: none !important;
   padding-left: 0;
   zoom: 1;
 }
 
-/* line 109, ../../sass/plugins/cms.placeholders.scss */
+/* line 192, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-subnav-title {
   color: #666 !important;
   float: none !important;
 }
 
-/* line 110, ../../sass/plugins/cms.placeholders.scss */
+/* line 193, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-subnav-title span {
   display: block;
   padding: 4px 10px !important;
@@ -2796,7 +2893,7 @@ html, body {
   border-radius: 4px 4px 0 0;
 }
 
-/* line 113, ../../sass/plugins/cms.placeholders.scss */
+/* line 196, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-subnav-title li a {
   display: block;
   padding: 3px 10px 4px !important;
@@ -2804,13 +2901,13 @@ html, body {
   zoom: 1;
 }
 
-/* line 114, ../../sass/plugins/cms.placeholders.scss */
+/* line 197, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-subnav-title li a:hover {
   color: #fff !important;
   background: #5b80b2;
 }
 
-/* line 115, ../../sass/plugins/cms.placeholders.scss */
+/* line 198, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-subnav-title li:last-child a {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
@@ -2818,7 +2915,7 @@ html, body {
 }
 
 /* #PLACEHOLDERS/loader# */
-/* line 118, ../../sass/plugins/cms.placeholders.scss */
+/* line 201, ../../sass/plugins/cms.placeholders.scss */
 #cms_placeholder-dim {
   display: none;
   position: absolute;
@@ -2830,7 +2927,7 @@ html, body {
   height: 100%;
 }
 
-/* line 119, ../../sass/plugins/cms.placeholders.scss */
+/* line 202, ../../sass/plugins/cms.placeholders.scss */
 #cms_placeholder-content {
   display: none;
   position: absolute;
@@ -2846,19 +2943,19 @@ html, body {
   box-shadow: black -5px 0px 5px;
 }
 
-/* line 122, ../../sass/plugins/cms.placeholders.scss */
+/* line 205, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-content_inner {
   padding: 25px !important;
   overflow: hidden;
 }
 
-/* line 123, ../../sass/plugins/cms.placeholders.scss */
+/* line 206, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-content_loader {
   min-height: 50px;
   background: url("../../images/toolbar/loader.gif") no-repeat center center;
 }
 
-/* line 125, ../../sass/plugins/cms.placeholders.scss */
+/* line 208, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-content_zone {
   position: absolute;
   left: 0;
@@ -2869,7 +2966,7 @@ html, body {
 }
 
 /* #PLACEHOLDERS/overlay# */
-/* line 129, ../../sass/plugins/cms.placeholders.scss */
+/* line 212, ../../sass/plugins/cms.placeholders.scss */
 #cms_placeholder-overlay {
   display: none;
   position: absolute;
@@ -2880,7 +2977,7 @@ html, body {
   border: 1px solid #5b80b2;
 }
 
-/* line 131, ../../sass/plugins/cms.placeholders.scss */
+/* line 214, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-overlay_bg {
   position: relative;
   left: 0;
@@ -2892,7 +2989,7 @@ html, body {
 }
 
 /* #PLACEHOLDERS/overlay/list# */
-/* line 135, ../../sass/plugins/cms.placeholders.scss */
+/* line 218, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-options {
   list-style: none;
   padding: 0;
@@ -2908,7 +3005,7 @@ html, body {
   border-radius: 5px;
 }
 
-/* line 138, ../../sass/plugins/cms.placeholders.scss */
+/* line 221, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-options li {
   float: left;
   padding: 0;
@@ -2916,7 +3013,7 @@ html, body {
   zoom: 1;
 }
 
-/* line 139, ../../sass/plugins/cms.placeholders.scss */
+/* line 222, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-options li a {
   float: left;
   color: #5b80b2;
@@ -2925,18 +3022,18 @@ html, body {
   border-left: 1px solid #e8e8e8 !important;
 }
 
-/* line 141, ../../sass/plugins/cms.placeholders.scss */
+/* line 224, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-options .first a {
   border-left: none !important;
 }
 
-/* line 142, ../../sass/plugins/cms.placeholders.scss */
+/* line 225, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-options .cms_placeholder-subnav {
   right: 0;
   top: 25px;
 }
 
-/* line 144, ../../sass/plugins/cms.placeholders.scss */
+/* line 227, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-options .cms_placeholder-subnav ul li,
 .cms_placeholder-options .cms_placeholder-subnav ul li a {
   color: #666;
@@ -2947,34 +3044,34 @@ html, body {
 }
 
 /* #PLACEHOLDERS/overlay/buttons# */
-/* line 147, ../../sass/plugins/cms.placeholders.scss */
+/* line 230, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-icon {
   width: 22px;
   height: 25px;
   background: url("../../images/toolbar/sprite_toolbar.png") no-repeat left top;
 }
 
-/* line 148, ../../sass/plugins/cms.placeholders.scss */
+/* line 231, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-icon_edit {
   background-position: -52px -147px;
 }
 
-/* line 149, ../../sass/plugins/cms.placeholders.scss */
+/* line 232, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-icon_up {
   background-position: -232px -147px;
 }
 
-/* line 150, ../../sass/plugins/cms.placeholders.scss */
+/* line 233, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-icon_down {
   background-position: -250px -147px;
 }
 
-/* line 151, ../../sass/plugins/cms.placeholders.scss */
+/* line 234, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-icon_delete {
   background-position: -160px -147px;
 }
 
-/* line 152, ../../sass/plugins/cms.placeholders.scss */
+/* line 235, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-icon_more {
   background-position: -70px -147px;
   position: relative;
@@ -2982,32 +3079,32 @@ html, body {
   top: 0;
 }
 
-/* line 153, ../../sass/plugins/cms.placeholders.scss */
+/* line 236, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-icon_edit:hover {
   background-position: -52px -173px;
 }
 
-/* line 154, ../../sass/plugins/cms.placeholders.scss */
+/* line 237, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-icon_up:hover {
   background-position: -232px -173px;
 }
 
-/* line 155, ../../sass/plugins/cms.placeholders.scss */
+/* line 238, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-icon_down:hover {
   background-position: -250px -173px;
 }
 
-/* line 156, ../../sass/plugins/cms.placeholders.scss */
+/* line 239, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-icon_delete:hover {
   background-position: -160px -173px;
 }
 
-/* line 157, ../../sass/plugins/cms.placeholders.scss */
+/* line 240, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-icon_more:hover {
   background-position: -70px -173px;
 }
 
-/* line 159, ../../sass/plugins/cms.placeholders.scss */
+/* line 242, ../../sass/plugins/cms.placeholders.scss */
 #cms_placeholder-success {
   display: none;
   position: absolute;
@@ -3018,7 +3115,7 @@ html, body {
   border: 1px solid #59e140;
 }
 
-/* line 160, ../../sass/plugins/cms.placeholders.scss */
+/* line 243, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-success_inner {
   width: 100%;
   height: 100%;
@@ -3027,14 +3124,14 @@ html, body {
 
 /*##################################################|*/
 /* #PLACEHOLDERS/IE# */
-/* line 164, ../../sass/plugins/cms.placeholders.scss */
+/* line 247, ../../sass/plugins/cms.placeholders.scss */
 #cms_placeholder-dim {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
   filter: alpha(opacity=60);
   opacity: 0.6;
 }
 
-/* line 170, ../../sass/plugins/cms.placeholders.scss */
+/* line 253, ../../sass/plugins/cms.placeholders.scss */
 .cms_placeholder-overlay_bg,
 .cms_placeholder-success_inner {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
@@ -3043,18 +3140,18 @@ html, body {
 }
 
 /* #PLACEHOLDERS/IE7# */
-/* line 177, ../../sass/plugins/cms.placeholders.scss */
+/* line 260, ../../sass/plugins/cms.placeholders.scss */
 * + html .cms_placeholder-subnav {
   width: 200px;
 }
 
 /* #PLACEHOLDERS/IE6# */
-/* line 180, ../../sass/plugins/cms.placeholders.scss */
+/* line 263, ../../sass/plugins/cms.placeholders.scss */
 *html .cms_placeholder-subnav {
   width: 200px;
 }
 
-/* line 181, ../../sass/plugins/cms.placeholders.scss */
+/* line 264, ../../sass/plugins/cms.placeholders.scss */
 *html .cms_placeholder-icon {
   background-image: url("../../images/toolbar/sprite_toolbar-ie.png") !important;
 }

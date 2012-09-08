@@ -141,6 +141,7 @@ jQuery(document).ready(function ($) {
 					   '    <div class="cms_toolbar-modal-title"></div>' +
 					   '    <div class="cms_toolbar-modal-resize"></div>' +
 					   '    <div class="cms_toolbar-modal-iframe"><div class="shim"></div></div>' +
+					   '    <ul class="cms_toolbar-modal-breadcrumb"><li><a href="#">Level 1</a></li><li><a href="#">Level 2</a></li><li><a href="#">Level 3</a></li></ul>' +
 					   '</div>';
 
 			// do some ajax stuff with the id
@@ -253,7 +254,7 @@ jQuery(document).ready(function ($) {
 				//'right': '10%',
 				'top': '15%',
 				'width': '80%',
-				'height': 300
+				'height': 315
 			}, function () {
 				that._updateIframeSize();
 			});
@@ -315,7 +316,7 @@ jQuery(document).ready(function ($) {
 			var cHeight = container.height();
 			var hHeight = header.outerHeight(true);
 
-			frame.css('height', cHeight - hHeight - 12);
+			frame.css('height', cHeight - hHeight - 27);
 		},
 
 
